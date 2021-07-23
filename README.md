@@ -34,6 +34,6 @@ $ sudo apt install nodejs
 
 ## 3. LICENSE
 
-Copyright (c) 2020 Liu Ruizhi
+Copyright (c) 2020 Ruizhi Liu
 
-Licensed under the [MIT License](https://github.com/ruizhi11/SEU-Daily-Report/blob/main/LICENSE)
+Licensed under the [MIT License](https://github.com/cybersp4ce/seu-daily-report/blob/main/LICENSE)
