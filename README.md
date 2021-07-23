@@ -11,8 +11,8 @@
 ### 1) clone该项目
 
 ```
-$ git clone https://github.com/ruizhi11/SEU-Daily-Report.git
-$ cd SEU-Daily-Report
+$ git clone https://github.com/cybersp4ce/seu-daily-report.git
+$ cd seu-daily-report
 ```
 
 ### 2) 安装依赖
