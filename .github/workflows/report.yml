@@ -39,6 +39,6 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           
       # Report
-      - name: report
+      - name: Report
         run: |
           python ./report.py ${{ secrets.USERNAME }} ${{ secrets.PASSWORD }}
