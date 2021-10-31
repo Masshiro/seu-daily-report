@@ -34,6 +34,6 @@ $ sudo apt install nodejs
 
 ## 3. LICENSE
 
-Copyright (c) 2020 Ruizhi Liu
+Copyright (c) 2020 cybersp4ce
 
 Licensed under the [MIT License](https://github.com/cybersp4ce/seu-daily-report/blob/main/LICENSE)
