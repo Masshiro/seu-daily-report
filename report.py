@@ -35,6 +35,7 @@ def login(sess, uname, pwd):
     login_response = sess.post(login_url, personal_info)
     login_response.encoding = 'utf-8'
 
+    print(login_response.text)
     if re.search("学院", login_response.text):
         print("登陆成功!")
     else:
