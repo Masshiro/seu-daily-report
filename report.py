@@ -9,7 +9,8 @@ import sys
 
 def login(sess, uname, pwd):
     salt_url = 'http://ehall.seu.edu.cn/qljfwapp2/sys/lwReportEpidemicSeu/index.do'
-    salt_response = sess.get(salt_url)
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.124 Safari/537.36 Edg/10'}
+    salt_response = sess.get(salt_url,headers=headers)
     salt_response.encoding = 'utf-8'
     lt = re.search('name="lt" value="(.*?)"', salt_response.text).group(1)
     salt = re.search('id="pwdDefaultEncryptSalt" value="(.*?)"', salt_response.text).group(1)
