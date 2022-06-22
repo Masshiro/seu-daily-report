@@ -43,7 +43,8 @@ def login(sess, uname, pwd):
 
 
 def get_header(sess, cookie_url):
-    cookie_response = sess.get(cookie_url)
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.124 Safari/537.36 Edg/10'}
+    cookie_response = sess.get(cookie_url,headers=headers)
     weu = requests.utils.dict_from_cookiejar(cookie_response.cookies)['_WEU']
     cookie = requests.utils.dict_from_cookiejar(sess.cookies)
 
