@@ -32,10 +32,9 @@ def login(sess, uname, pwd):
                      'execution': execution,
                      '_eventId': 'submit',
                      'rmShown': '1'}
-    login_response = sess.post(login_url, personal_info)
+    login_response = sess.post(login_url, personal_info, headers=headers)
     login_response.encoding = 'utf-8'
 
-    print(login_response.text)
     if re.search("学院", login_response.text):
         print("登陆成功!")
     else:
